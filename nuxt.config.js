@@ -52,7 +52,7 @@ export default {
       light: true,
       themes: {
         light: {
-          primary: colors.red.darken2,
+          primary: colors.yellow.darken2,
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
