@@ -26,7 +26,7 @@
     </v-navigation-drawer>
     <v-app-bar
       app
-      color="indigo"
+      color="primary"
       clipped-left
       dark
     >
