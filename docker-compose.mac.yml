@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  nuxt:
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+      - nuxt:/home/node/.npm
+
+volumes:
+  nuxt:
+    driver: local
