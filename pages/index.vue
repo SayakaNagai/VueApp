@@ -26,12 +26,17 @@
     </v-navigation-drawer>
     <v-app-bar
       app
-      color="indigo"
+      color="primary"
       clipped-left
       dark
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title>Application</v-toolbar-title>
+      <v-spacer></v-spacer>
+
+      <v-btn icon :to="'/inspire'">
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
     </v-app-bar>
     <v-content>
       <v-container
@@ -47,6 +52,12 @@
           </v-col>
         </v-row>
       </v-container>
+      <div class="text-center">
+        <v-pagination
+          v-model="page"
+          :length="6"
+        ></v-pagination>
+      </div>
     </v-content>
     <v-footer
       color="indigo"
@@ -70,6 +81,12 @@
 <style>
 #hoge {
   color: red;
+} 
+.v-pagination__item {
+  background-color: yellow !important;
+}
+.v-pagination__item:hover {
+  background-color: orange !important;
 }
 </style>
 
